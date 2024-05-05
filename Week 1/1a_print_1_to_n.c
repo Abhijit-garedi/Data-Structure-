@@ -5,10 +5,11 @@
    {
     if(i <= n)
     {
-     printf("%d\t", i);
-    print(i+1, n);
+      printf("%d\t", i);
+      print(i+1, n);
     }
    }
+   
 
    int main()
    {
