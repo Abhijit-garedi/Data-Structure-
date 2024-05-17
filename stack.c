@@ -13,3 +13,11 @@ void push(int data) {
         printf("%d pushed to stack\n", data);
     }
 }
+int pop() {
+    if (top < 0) {
+        printf("Stack Underflow\n");
+        return -1;
+    } else {
+        return stack[top--];
+    }
+}
