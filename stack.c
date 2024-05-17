@@ -31,3 +31,31 @@ void display() {
         }
     }
 }
+int main() {
+    int choice, value;
+    while (1) {
+        printf("\n1. Push\n2. Pop\n3. Display\n4. Exit\nEnter your choice: ");
+        scanf("%d", &choice);
+        switch (choice) {
+            case 1:
+                printf("Enter the value to be pushed: ");
+                scanf("%d", &value);
+                push(value);
+                break;
+            case 2:
+                value = pop();
+                if (value != -1) {
+                    printf("Popped value: %d\n", value);
+                }
+                break;
+            case 3:
+                display();
+                break;
+            case 4:
+                exit(0);
+            default:
+                printf("Invalid choice\n");
+        }
+    }
+    return 0;
+}
